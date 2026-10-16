@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cradle — Gizlilik Politikası / Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1f2b; --muted: #5b6579;
+    --accent: #2f6bd8; --card: #f4f7fc; --line: #dde4ef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121722; --fg: #e6ebf5; --muted: #9aa5bb;
+      --accent: #7aa7ff; --card: #1a2131; --line: #2a3346;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2rem 1.25rem 5rem;
+    background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .35rem; }
+  h2 { font-size: 1.25rem; margin: 2.5rem 0 .75rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+  h3 { font-size: 1rem; margin: 1.5rem 0 .4rem; }
+  .sub { color: var(--muted); margin: 0 0 2rem; font-size: .95rem; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 1rem 1.25rem; margin: 1.5rem 0; }
+  .card p:first-child { margin-top: 0; }
+  .card p:last-child { margin-bottom: 0; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  a { color: var(--accent); }
+  code { background: var(--card); border: 1px solid var(--line); border-radius: 5px; padding: .1rem .35rem; font-size: .9em; }
+  .lang-sep { margin: 4rem 0 0; border: 0; border-top: 3px double var(--line); }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .875rem; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Gizlilik Politikası</h1>
+<p class="sub">Cradle · Son güncelleme: 16 Ağustos 2026</p>
+
+<div class="card">
+  <p><strong>Kısa özet:</strong> Cradle sizin hakkınızda hiçbir veri toplamaz. Bebeğinizin görüntüsü ve sesi
+  cihazınızdan hiçbir zaman çıkmaz — yalnızca sizin Wi-Fi ağınız üzerinden, doğrudan cihazdan cihaza,
+  şifrelenmiş olarak aktarılır. Sunucumuz yok, hesap yok, bulut yok, analitik yok, reklam yok.</p>
+</div>
+
+<h2>1. Kim olduğumuz</h2>
+<p>Cradle uygulaması can okcelik tarafından geliştirilmekte ve yayınlanmaktadır. Bu politikadaki
+"biz", "uygulama" veya "Cradle" ifadeleri bu uygulamayı ifade eder.</p>
+<p>İletişim: <a href="mailto:cradle@finjet.ai">cradle@finjet.ai</a></p>
+
+<h2>2. Topladığımız veriler</h2>
+<p><strong>Hiçbiri.</strong> Cradle'ın bir sunucusu yoktur. Uygulama, kullanımınıza dair hiçbir bilgiyi
+bize veya herhangi bir üçüncü tarafa göndermez. Kullanıcı hesabı oluşturmanız gerekmez; e-posta,
+telefon numarası, ad veya benzeri bir kişisel bilgi istemiyoruz.</p>
+<p>Uygulamada analiz (analytics), çökme raporlama SDK'sı, reklam ağı, izleme pikseli veya
+oturum kaydı (session replay) aracı <strong>bulunmamaktadır</strong>.</p>
+
+<h2>3. Video ve ses nasıl aktarılır</h2>
+<p>Bebek odasındaki cihaz ile ebeveyn cihazı arasındaki canlı görüntü ve ses,
+<strong>yalnızca aynı yerel Wi-Fi ağı üzerinden</strong>, doğrudan iki cihaz arasında (peer-to-peer)
+aktarılır. Bu akış:</p>
+<ul>
+  <li>internete çıkmaz, bir sunucuya veya buluta yüklenmez;</li>
+  <li>uçtan uca şifrelenir (WebRTC/DTLS-SRTP) ve ayrıca uygulama düzeyinde bir PIN ile korunur;</li>
+  <li>hiçbir yere kaydedilmez — ne cihazda ne başka bir yerde; yayın canlıdır, biter ve geriye iz kalmaz.</li>
+</ul>
+<p>İki cihaz birbirini yerel ağda Bonjour/mDNS ile bulur. Bu nedenle iOS sizden
+<em>Yerel Ağ</em> izni ister. Bu izin yalnızca cihaz keşfi içindir.</p>
+
+<h2>4. Cihazınızda saklananlar</h2>
+<p>Aşağıdaki ayarlar yalnızca <strong>kendi cihazınızın yerel depolamasında</strong> tutulur.
+Bize veya başkasına gönderilmez. Uygulamayı sildiğinizde hepsi silinir.</p>
+<ul>
+  <li><code>babymonitor.roomName</code> — verdiğiniz oda adı (ör. "Bebek Odası")</li>
+  <li><code>babymonitor.role</code> — son seçtiğiniz rol (bebek / ebeveyn)</li>
+  <li><code>babymonitor.pin.*</code> — bağlandığınız odaların PIN'leri, her seferinde yeniden yazmayasınız diye</li>
+  <li><code>babymonitor.entitlement</code> — abonelik durumunuzun önbelleği (aktif / deneme / süresi dolmuş),
+      böylece internet olmadığında da uygulama çalışmaya devam eder</li>
+</ul>
+
+<h2>5. Cihaz izinleri</h2>
+<ul>
+  <li><strong>Kamera</strong> — yalnızca "Bebek Odası" rolünde, yalnızca yerel ağa canlı yayın için.
+      Kayıt yapılmaz.</li>
+  <li><strong>Mikrofon</strong> — yalnızca "Bebek Odası" rolünde canlı ses yayını için ve
+      "bas-konuş" özelliğinde ebeveyn cihazında. Kayıt yapılmaz.</li>
+  <li><strong>Yerel ağ</strong> — bebek ve ebeveyn cihazlarının birbirini bulması için.</li>
+  <li><strong>Bildirimler / arka planda çalışma</strong> — bağlantı kesildiğinde sizi uyarmak için.</li>
+  <li><strong>Konum</strong> — <strong>kullanılmaz.</strong> Konumunuza erişmiyoruz ve konum verisi işlemiyoruz.</li>
+</ul>
+
+<h2>6. Abonelik ve ödeme</h2>
+<p>Ebeveyn (izleyici) rolü ücretli bir aboneliktir; bebek (yayıncı) rolü ücretsizdir.
+Abonelik satın alma işleminin tamamı <strong>Apple App Store</strong> üzerinden yürür.</p>
+<ul>
+  <li>Kredi kartı, fatura veya ödeme bilgileriniz <strong>bize hiçbir zaman ulaşmaz</strong>; bunları görmeyiz.</li>
+  <li>Uygulama yalnızca Apple'a "bu Apple Kimliği'nin aktif aboneliği var mı?" diye sorar ve
+      yanıtı cihazda saklar.</li>
+  <li>Bu işlemde Apple'ın kendi gizlilik politikası geçerlidir:
+      <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
+</ul>
+
+<h2>7. Çocuklara ilişkin veriler</h2>
+<p>Uygulama doğası gereği bir bebeğin görüntüsünü ve sesini işler. Bu içerik
+<strong>cihazdan çıkmaz, kaydedilmez, saklanmaz ve hiç kimseye iletilmez</strong> — yalnızca aynı ev ağındaki
+kendi ebeveyn cihazınızda canlı olarak görüntülenir. Bu veriler üzerinde bizim hiçbir erişimimiz yoktur.</p>
+
+<h2>8. Üçüncü taraflar</h2>
+<p>Verilerinizi kimseyle paylaşmıyoruz, çünkü elimizde veriniz yok. Uygulamada üçüncü taraf
+veri işleyici bulunmuyor. Tek istisna, uygulamanın dağıtımını ve abonelik tahsilatını yapan
+Apple'dır (yukarıda 6. maddede açıklandığı gibi).</p>
+
+<h2>9. Haklarınız (KVKK / GDPR)</h2>
+<p>KVKK ve GDPR kapsamında erişim, düzeltme, silme ve taşınabilirlik haklarınız vardır.
+Bizde size ait hiçbir kişisel veri bulunmadığından, pratikte bu haklar şu şekilde karşılanır:</p>
+<ul>
+  <li>Cihazınızda saklanan tüm uygulama verisini, uygulamayı silerek tamamen kaldırabilirsiniz.</li>
+  <li>Aboneliğinizi Apple Kimliğiniz üzerinden dilediğiniz an yönetebilir ve iptal edebilirsiniz.</li>
+  <li>Yine de bir talebiniz veya sorunuz olursa <a href="mailto:cradle@finjet.ai">cradle@finjet.ai</a>
+      adresinden bize yazabilirsiniz.</li>
+</ul>
+
+<h2>10. Değişiklikler</h2>
+<p>Bu politikayı zaman zaman güncelleyebiliriz. Önemli bir değişiklik olursa güncelleme tarihi
+bu sayfanın en üstünde değişir ve uygulama içinde bilgilendirme yaparız.</p>
+
+<hr class="lang-sep">
+
+<h1 id="en">Privacy Policy (English)</h1>
+<p class="sub">Cradle · Last updated: 16 August 2026</p>
+
+<div class="card">
+  <p><strong>In short:</strong> Cradle collects no data about you. Your baby's video and audio never leave
+  your devices — they are streamed directly device-to-device over your own Wi-Fi network, encrypted.
+  We run no servers. No accounts, no cloud, no analytics, no ads.</p>
+</div>
+
+<h2>1. Who we are</h2>
+<p>Cradle is developed and published by can okcelik.
+Contact: <a href="mailto:cradle@finjet.ai">cradle@finjet.ai</a></p>
+
+<h2>2. Data we collect</h2>
+<p><strong>None.</strong> Cradle has no backend server. The app sends no information about your usage
+to us or to any third party. No account is required — we do not ask for your email, phone number or name.</p>
+<p>The app contains <strong>no</strong> analytics SDK, crash-reporting SDK, advertising network,
+tracking pixel or session-replay tool.</p>
+
+<h2>3. How video and audio are transmitted</h2>
+<p>Live video and audio between the baby device and the parent device are transmitted
+<strong>only over your local Wi-Fi network</strong>, directly peer-to-peer. This stream:</p>
+<ul>
+  <li>never reaches the internet and is never uploaded to any server or cloud;</li>
+  <li>is end-to-end encrypted (WebRTC/DTLS-SRTP) and additionally protected by an app-level PIN;</li>
+  <li>is never recorded — not on the device, not anywhere. The stream is live and leaves no trace.</li>
+</ul>
+<p>The two devices discover each other on the local network via Bonjour/mDNS, which is why iOS asks for
+<em>Local Network</em> permission. It is used solely for device discovery.</p>
+
+<h2>4. Stored on your device</h2>
+<p>The following settings are kept only in your device's local storage. They are never transmitted.
+Deleting the app removes all of them.</p>
+<ul>
+  <li><code>babymonitor.roomName</code> — the room name you chose</li>
+  <li><code>babymonitor.role</code> — the role you last selected (baby / parent)</li>
+  <li><code>babymonitor.pin.*</code> — PINs of rooms you connected to, so you need not retype them</li>
+  <li><code>babymonitor.entitlement</code> — a cache of your subscription status, so the app keeps
+      working while offline</li>
+</ul>
+
+<h2>5. Device permissions</h2>
+<ul>
+  <li><strong>Camera</strong> — only in the "Baby Room" role, only to stream live to your local network. Nothing is recorded.</li>
+  <li><strong>Microphone</strong> — only in the "Baby Room" role for live audio, and on the parent device for push-to-talk. Nothing is recorded.</li>
+  <li><strong>Local network</strong> — so the baby and parent devices can find each other.</li>
+  <li><strong>Notifications / background execution</strong> — to alert you if the connection drops.</li>
+  <li><strong>Location</strong> — <strong>not used.</strong> We do not access or process location data.</li>
+</ul>
+
+<h2>6. Subscription and payment</h2>
+<p>The parent (viewer) role requires a paid subscription; the baby (broadcaster) role is free.
+All purchases are handled entirely by the <strong>Apple App Store</strong>.</p>
+<ul>
+  <li>Your card, billing or payment details <strong>never reach us</strong>.</li>
+  <li>The app only asks Apple whether the current Apple Account has an active subscription, and caches the answer on device.</li>
+  <li>Apple's own privacy policy applies to that transaction:
+      <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
+</ul>
+
+<h2>7. Children's data</h2>
+<p>By its nature the app processes a baby's image and sound. That content
+<strong>never leaves your devices, is never recorded, stored or transmitted to anyone</strong> — it is only
+displayed live on your own parent device on the same home network. We have no access to it whatsoever.</p>
+
+<h2>8. Third parties</h2>
+<p>We share your data with no one, because we hold none. The app contains no third-party data processors.
+The sole exception is Apple, which distributes the app and processes subscription billing (see section 6).</p>
+
+<h2>9. Your rights (KVKK / GDPR)</h2>
+<p>You have rights of access, rectification, erasure and portability. Since we hold no personal data
+about you, these are satisfied as follows:</p>
+<ul>
+  <li>You can remove all app data stored on your device by deleting the app.</li>
+  <li>You can manage or cancel your subscription at any time through your Apple Account.</li>
+  <li>For any question or request, write to <a href="mailto:cradle@finjet.ai">cradle@finjet.ai</a>.</li>
+</ul>
+
+<h2>10. Changes</h2>
+<p>We may update this policy from time to time. If we make a material change, the date at the top of
+this page will change and we will notify you in the app.</p>
+
+<footer>© 2026 can okcelik · Cradle</footer>
+
+</main>
+</body>
+</html>

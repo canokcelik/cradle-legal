@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cradle: Private Baby Monitor</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1f2b; --muted: #5b6579;
+    --accent: #2f6bd8; --card: #f4f7fc; --line: #dde4ef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121722; --fg: #e6ebf5; --muted: #9aa5bb;
+      --accent: #7aa7ff; --card: #1a2131; --line: #2a3346;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 4rem 1.25rem;
+    background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 36rem; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .5rem; }
+  .sub { color: var(--muted); margin: 0 0 2.5rem; }
+  .card { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+          padding: 1rem 1.25rem; margin: .75rem 0; color: var(--fg); text-decoration: none; }
+  .card strong { display: block; }
+  .card span { color: var(--muted); font-size: .9rem; }
+  a { color: var(--accent); }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .875rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>Cradle: Private Baby Monitor</h1>
+<p class="sub">Yalnızca yerel ağ · uçtan uca şifreli · bulut yok.<br>
+Local network only · end-to-end encrypted · no cloud.</p>
+
+<a class="card" href="privacy.html"><strong>Gizlilik Politikası / Privacy Policy</strong>
+<span>Hangi verilerin işlendiği (hiçbiri) / What data is processed (none)</span></a>
+<a class="card" href="terms.html"><strong>Kullanım Koşulları / Terms of Use</strong>
+<span>Abonelik, deneme ve iptal / Subscription, trial and cancellation</span></a>
+
+<footer>Destek / Support: <a href="mailto:cradle@finjet.ai">cradle@finjet.ai</a></footer>
+</main>
+</body>
+</html>
